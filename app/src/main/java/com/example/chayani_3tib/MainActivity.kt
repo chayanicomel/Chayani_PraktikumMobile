@@ -8,19 +8,21 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.chayani_3tib.databinding.ActivityMainBinding
+import com.example.chayani_3tib.pertemuan5.LimaActivity
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.android.material.snackbar.Snackbar
 
+// Jika LimaActivity dibuat di dalam package/folder pertemuan_5, hilangkan tanda // pada import berikut:
+// import com.example.chayani_3tib.pertemuan_5.LimaActivity
+
 class MainActivity : AppCompatActivity() {
 
-    // 1. Deklarasi variabel binding
     private lateinit var binding: ActivityMainBinding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
 
-        // 2. Inisialisasi binding menggantikan setContentView(R.layout.activity_main)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
@@ -30,41 +32,43 @@ class MainActivity : AppCompatActivity() {
             insets
         }
 
-        // 3. Mengambil data dari Intent
         val user = intent.getStringExtra("username")
         val pass = intent.getStringExtra("password")
         val umur = intent.getIntExtra("umur", 0)
 
         Log.v("Hasil", "umur $umur")
 
-        // 5. Menampilkan data ke TextView
         binding.txtUsername.text = user
         binding.txtPassword.text = pass
 
         binding.btnSnackBar.setOnClickListener {
-            Snackbar.make(binding.root, "Item dihapus",
-                Snackbar.LENGTH_LONG)
+            Snackbar.make(binding.root, "Item dihapus", Snackbar.LENGTH_LONG)
                 .setAction("BATAL") {
                     // kembalikan item
                 }
                 .show()
         }
+
         binding.btnAlertDialog.setOnClickListener {
             MaterialAlertDialogBuilder(this)
                 .setTitle("Hapus data")
-                .setMessage("Data yang dihapus tidak " +
-                        "bisa dikembalikan.")
+                .setMessage("Data yang dihapus tidak bisa dikembalikan.")
                 .setNegativeButton("Batal", null)
                 .setPositiveButton("Hapus") { dialog, _ ->
-                    // proses hapus
                     dialog.dismiss()
                 }
                 .setCancelable(false)
                 .show()
         }
-        binding.btnKembali.setOnClickListener {
 
+        binding.btnKembali.setOnClickListener {
             finish()
+        }
+
+        // Pindah ke LimaActivity ketika tombol Pertemuan 5 diklik
+        binding.btnToLima.setOnClickListener {
+            val intent = Intent(this@MainActivity, LimaActivity::class.java)
+            startActivity(intent)
         }
     }
 }
