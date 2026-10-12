@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <uses-permission android:name="android.permission.INTERNET"/>
+    <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="true"
         android:dataExtractionRules="@xml/data_extraction_rules"
@@ -14,7 +15,7 @@
 
         <!-- LoginActivity dipasang sebagai Halaman Utama (LAUNCHER) -->
         <activity
-            android:name=".LoginActivity"
+            android:name=".SplashScreenActivity"
             android:exported="true"
             android:windowSoftInputMode="adjustResize">
             <intent-filter>
@@ -31,24 +32,21 @@
             android:windowSoftInputMode="adjustResize" />
 
         <!-- Activity Pertemuan 5 (Tambahan dari modul) -->
-        <activity
-            android:name=".pertemuan_5.LimaActivity"
-            android:exported="false"
-            android:windowSoftInputMode="adjustResize" />
-        <activity
-            android:name=".pertemuan_5.WebViewActivity"
-            android:exported="false"
-            android:windowSoftInputMode="adjustResize" />
-        <activity
-            android:name=".LimaActivity"
-            android:exported="false"
-            android:windowSoftInputMode="adjustResize" />
+
         <activity
             android:name=".pertemuan5.LimaActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
         <activity
             android:name=".pertemuan5.WebViewActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".Pertemuan6.SixthActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
+        <activity
+            android:name=".LoginActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
     </application>

@@ -48,15 +48,14 @@
         android:id="@+id/btnKembali"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="124dp"
+        android:layout_marginStart="164dp"
+        android:layout_marginTop="36dp"
         android:backgroundTint="#19491A"
         android:text="Kembali"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.498"
+
+
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/materialCardView"
-        app:layout_constraintVertical_bias="0.082" />
+        app:layout_constraintTop_toBottomOf="@+id/materialCardView" />
 
     <com.google.android.material.card.MaterialCardView
         android:id="@+id/materialCardView"
@@ -106,15 +105,42 @@
     </com.google.android.material.card.MaterialCardView>
 
     <!-- Tombol Pertemuan 5 -->
+
     <Button
         android:id="@+id/btnToLima"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="12dp"
+        android:layout_marginTop="20dp"
         android:backgroundTint="#C2185B"
         android:text="Pertemuan 5"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.546"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btnKembali" />
+
+    <Button
+        android:id="@+id/btnToSixth"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:backgroundTint="#00796B"
+        android:text="Pertemuan 6"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.546"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnToLima" />
+
+    <Button
+        android:id="@+id/btnLogout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:backgroundTint="#D32F2F"
+        android:text="Logout"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.537"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnToSixth" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
