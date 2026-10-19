@@ -1,4 +1,4 @@
-package com.example.chayani_3tib.Pertemuan6
+package com.example.chayani_3tib.Home.Pertemuan6
 
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -6,7 +6,8 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import com.example.chayani_3tib.R
-class DuaFragment : Fragment() {
+
+class SatuFragment : Fragment() {
 
 
     override fun onCreateView(
@@ -14,7 +15,7 @@ class DuaFragment : Fragment() {
         savedInstanceState: Bundle?
     ): View? {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_dua, container, false)
+        return inflater.inflate(R.layout.fragment_satu, container, false)
     }
 
 }

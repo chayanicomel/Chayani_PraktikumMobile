@@ -8,9 +8,9 @@ import androidx.appcompat.app.AlertDialog
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.chayani_3tib.Pertemuan6.SixthActivity
+import com.example.chayani_3tib.Home.Pertemuan6.SixthActivity
 import com.example.chayani_3tib.databinding.ActivityMainBinding
-import com.example.chayani_3tib.pertemuan5.LimaActivity
+import com.example.chayani_3tib.Home.pertemuan5.LimaActivity
 import com.google.android.material.dialog.MaterialAlertDialogBuilder
 import com.google.android.material.snackbar.Snackbar
 

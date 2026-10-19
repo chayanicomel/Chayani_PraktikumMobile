@@ -1,4 +1,4 @@
-package com.example.chayani_3tib.pertemuan5
+package com.example.chayani_3tib.Home.pertemuan5
 import android.content.Intent
 import android.os.Bundle
 import android.view.MenuItem
@@ -9,7 +9,6 @@ import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
 import com.example.chayani_3tib.R
 import com.example.chayani_3tib.databinding.ActivityLimaBinding
-import com.example.chayani_3tib.databinding.ActivityMainBinding
 
 class LimaActivity : AppCompatActivity() {
 
