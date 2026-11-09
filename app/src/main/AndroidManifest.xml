@@ -57,7 +57,6 @@
             android:name=".Message.MessageActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
-
         <activity
             android:name=".Home.pertemuan9.NinthActivity"
             android:exported="false"
@@ -66,7 +65,10 @@
             android:name=".Message.TutorialMessageActivity"
             android:exported="false"
             android:windowSoftInputMode="adjustResize" />
-
+        <activity
+            android:name=".Home.pertemuan10.TenthActivity"
+            android:exported="false"
+            android:windowSoftInputMode="adjustResize" />
     </application>
 
 </manifest>

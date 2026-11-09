@@ -10,6 +10,7 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.appcompat.app.AlertDialog
 import com.example.chayani_3tib.Home.Pertemuan6.SixthActivity
+import com.example.chayani_3tib.Home.pertemuan10.TenthActivity
 import com.example.chayani_3tib.Home.pertemuan5.LimaActivity
 import com.example.chayani_3tib.Home.pertemuan9.NinthActivity
 import com.example.chayani_3tib.LoginActivity
@@ -75,6 +76,9 @@ class HomeFragment : Fragment() {
         }
         binding.btntosembilan.setOnClickListener {  startActivity(Intent(requireContext(),
             NinthActivity::class.java))
+        }
+        binding.btntoTenth.setOnClickListener {  startActivity(Intent(requireContext(),
+            TenthActivity::class.java))
         }
         binding.btnLogout.setOnClickListener {
             AlertDialog.Builder(requireContext())
