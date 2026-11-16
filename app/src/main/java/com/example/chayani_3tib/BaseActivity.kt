@@ -1,7 +1,6 @@
 package com.example.chayani_3tib
 
 import android.os.Bundle
-import android.widget.Toast
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
@@ -10,6 +9,7 @@ import androidx.fragment.app.Fragment
 import com.example.chayani_3tib.Home.HomeFragment
 import com.example.chayani_3tib.Message.MessageFragment
 import com.example.chayani_3tib.More.MoreFragment
+import com.example.chayani_3tib.Note.FragmentNote
 import com.example.chayani_3tib.databinding.ActivityBaseBinding
 
 class BaseActivity : AppCompatActivity() {
@@ -37,6 +37,10 @@ class BaseActivity : AppCompatActivity() {
                 }
                 R.id.more -> {
                     replaceFragment(MoreFragment())
+                    true
+                }
+                R.id.note -> {
+                    replaceFragment(FragmentNote())
                     true
                 }
                 else -> false // false jika item tidak dikenal
